@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#222222"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@null" />
+    </LinearLayout>
+
+    <com.hackers.promocatch.utill.ImageViewPlus
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/homebg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".14"
+            android:gravity="center">
+
+            <com.hackers.promocatch.utill.TextViewPlus
+                android:id="@+id/startcatching"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:text="FOXR PROFILE"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#999999"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/buttons"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_weight=".75"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:id="@+id/btnInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="info"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_alignBottom="@+id/btnMap"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/trophy" />
+
+                    <com.hackers.promocatch.utill.TextViewPlus
+                        android:id="@+id/textTrophy1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="860"
+                        fontPath="Montserrat-Bold.otf"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <com.hackers.promocatch.utill.TextViewPlus
+                        android:id="@+id/textTrophy2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center"
+                        fontPath="Montserrat-Black.otf"
+                        android:maxLines="2"
+                        android:text="CHALLENGES\n PARTICIPATED"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnHistroty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="history"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_alignBottom="@+id/btnMap">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/paw" />
+
+                    <com.hackers.promocatch.utill.TextViewPlus
+                        android:id="@+id/textPaw1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/btnHistroty"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        fontPath="Montserrat-Bold.otf"
+                        android:text="12,860"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <com.hackers.promocatch.utill.TextViewPlus
+                        android:id="@+id/textPaw2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        fontPath="Montserrat-Black.otf"
+                        android:text="POINTS\n COLLECTED"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:onClick="history"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/btnHistroty"
+                    android:layout_toLeftOf="@+id/btnInfo">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.hackers.promocatch.utill.TextViewPlus
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    fontPath="Montserrat-Black.otf"
+                    android:gravity="center_horizontal"
+                    android:text="JOHN DONGANWALA"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <com.hackers.promocatch.utill.TextViewPlus
+                    android:id="@+id/textpoints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    fontPath="Montserrat-Black.otf"
+                    android:text="You need to collect 2.140 points to\n earn the next badge"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".10"
+            android:gravity="center">
+
+            <com.hackers.promocatch.utill.TextViewPlus
+                android:id="@+id/textChallange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_centerHorizontal="true"
+                fontPath="Montserrat-Black.otf"
+                android:gravity="center_horizontal"
+                android:text="ONGOING CHALLENGES"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#999999"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:gravity="center">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:overScrollMode="never" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

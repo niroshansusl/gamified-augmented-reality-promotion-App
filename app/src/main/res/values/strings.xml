@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FOXR</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="action_settings">Preferences</string>
+    <string name="action_aboutus">About</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_history">HistoryActivity</string>
+    <string name="title_activity_pause_game">PauseGameActivity</string>
+    <string name="English">English</string>
+    <string name="Play">Play</string>
+    <string name="Practice">Practice</string>
+    <string name="Map">Map</string>
+    <string name="History">History</string>
+    <string name="Info">Info</string>
+    <string name="Resume">Resume</string>
+    <string name="Add_To_Library">Add To Library</string>
+    <string name="Exit">Exit</string>
+    <string name="Congradulation">Congradulation</string>
+    <string name="Reward">Reward</string>
+    <string name="Bhasha_pvt">© 2016 FOXR (Pvt) Ltd</string>
+    <string name="loading_en">Loading...</string>
+    <string name="caughton_en">Catched on:</string>
+    <string name="refID_en">Ref. No:</string>
+    <string name="Registeringonserver_en">Registering...</string>
+    <string name="suscribeerror_en">Only subscribers can play the Live Game.</string>
+    <string name="unabletoconnectinternet_en">Unable to connect to the server. Check your internet connection and try again.</string>
+    <string name="devicenotsupport_en">Your device does not support app requirements. Unable to launch the app.</string>
+    <string name="needpackage_en">You have to activate a data package to play Live Game. Do you want to activate a data package now?</string>
+    <string name="lowbalance_en">Sorry! Your balance is not enough to activate a data package. Please top-up your account and try again.</string>
+    <string name="needgps_en">You need GPS to start the Game. Activate GPS now?</string>
+    <string name="cannotresivegps_en">GPS location cannot be retrieved. Unable to play the Game.</string>
+    <string name="gpsRetreiving_en">Retrieving GPS location...</string>
+    <string name="fartocatch_en">Too far to catch! Go closer</string>
+    <string name="yougot_en">You got</string>
+    <string name="nothing_en">0 Value</string>
+    <string name="nothing_si">0 Value</string>
+    <string name="nothing_tm">0 Value</string>
+    <string name="taptoc_en">Tap to continue</string>
+    <string name="startcaching_en">FOXR PROFILE</string>
+    <string name="info_en">With the concept of "Coupon Entertainment" and a combination of Augmented Reality, Motion Sensor and GPS, your mobile phone is now turning into a portable net, catching different virtual objects around the town. Each virtual object is gorgeously designed with special offers and even exciting surprises which entertain you anytime, anywhere. Special offers and surprises from a variety of brands are flying around out there for you to explore!</string>
+    <string name="title_activity_preferencez">PreferenceActivity</string>
+    <string name="title_activity_about_us">About</string>
+    <string name="Bhasha">Copyright © 2016 FOXR (Pvt) Ltd</string>
+    <string name="AboutUs">About</string>
+    <string name="MoreApps">Contact Developer</string>
+    <string name="AppSupport">App Support</string>
+    <string name="Close">Close</string>
+    <string name="Rate">Rate This App</string>
+    <string name="AppNameVersion">FOXR (Pvt) Ltd</string>
+    <string name="Description">Foxr App v1.0</string>
+    <string name="Disclaimer">Solution by</string>
+    <string name="PackageActivating_en">Activating data package...</string>
+    <string name="noboject_en">Sorry! No live objects available around you, Please try again later.</string>
+	<string name="nointernet_en">No active data connection found! Please enable your data connection to start the Live Game.</string>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@null"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <com.hackers.promocatch.utill.ImageViewPlus
+            android:id="@+id/imageNet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="72dp"
+            android:src="@drawable/game_net_ready"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/caughtItemslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="75dp"
+            android:visibility="visible" >
+
+            <com.hackers.promocatch.utill.ImageViewPlus
+                android:id="@+id/imageNetCaught"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/game_net_caught"
+                android:visibility="gone" />
+
+            <com.hackers.promocatch.utill.ImageViewPlus
+                android:id="@+id/imageNetCaughtPaused"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/game_net_caught"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageBallThatCaought"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="30dp"
+                android:src="@drawable/game_ball_gold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/space"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical" >
+
+                <com.hackers.promocatch.utill.TextViewPlus
+                    android:id="@+id/tapto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/taptoc_en"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="#888888"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/popupLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/space"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/game_popup_back"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <com.hackers.promocatch.utill.TextViewPlus
+                    android:id="@+id/youGot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="@string/yougot_en"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/offerValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50 MB"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

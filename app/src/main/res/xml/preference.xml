@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="pref2"
+        android:title="Katchapp Settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="GameSound"
+            android:summary="Turn ON/OFF Game Sound"
+            android:title="Game Sound" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="SplashSound"
+            android:summary="Turn ON/OFF Welcome Sound"
+            android:title="Welcome Sound" />
+
+        <Preference
+            android:key="deleteHistory"
+            android:summary="Clear catch history"
+            android:title="Clear History" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

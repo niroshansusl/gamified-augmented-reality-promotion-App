@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#222222"
+        android:orientation="vertical"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@null" />
+    </LinearLayout>
+
+    <com.hackers.promocatch.utill.ImageViewPlus
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <com.hackers.promocatch.utill.TextViewPlus
+        android:id="@+id/startcatching"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Start catching your offers"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#999999"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/catch_selector"
+        android:onClick="catchPress"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/middle_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnLive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/dashboard_liveplay"
+            android:onClick="play" />
+
+        <Button
+            android:id="@+id/btnPractice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/dashboard_practiceplay"
+            android:onClick="practice" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/map_selector"
+            android:onClick="map" />
+
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnMap"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/info_selector"
+            android:onClick="info" />
+
+        <Button
+            android:id="@+id/btnHistroty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnMap"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/history_selector"
+            android:onClick="history" />
+    </RelativeLayout>
+
+</RelativeLayout>

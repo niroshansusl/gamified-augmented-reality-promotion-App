@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+        <com.hackers.promocatch.model.LinearLayoutCarousel
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top|center_horizontal"
+            android:background="@android:color/transparent">
+
+            <com.hackers.promocatch.utill.ImageViewPlus
+                android:id="@+id/carousel_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/abc_cab_background_internal_bg"/>
+
+        </com.hackers.promocatch.model.LinearLayoutCarousel>
+
+    </LinearLayout>
